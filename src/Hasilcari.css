@@ -1,0 +1,6 @@
+.kontainer {
+  padding: 10px;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+  gap: 10px !important;
+}

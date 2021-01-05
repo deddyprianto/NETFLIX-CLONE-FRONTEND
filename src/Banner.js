@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import dbRequURL from "./Api";
+import { dbRequURL } from "./Api";
 import instance from "./Axios";
 import "./Banner.css";
-
 function Banner() {
   const [movie, setMovie] = useState([]);
   useEffect(() => {
@@ -31,7 +30,7 @@ function Banner() {
       <div className="banner__content">
         <h1>{movie?.title || movie?.name || movie?.original_name}</h1>
         <div className="banner__buttons">
-          <button className="banner__button">Play</button>
+          <button className="banner__button">Play Video</button>
           <button className="banner__button">My List</button>
           <h1 className="banner__description">
             {truncate(movie?.overview, 150)}

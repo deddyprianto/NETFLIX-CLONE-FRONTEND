@@ -1,6 +1,6 @@
-const api_key = "f797e2cf0bb90660383d12fa045c15e6";
+export const api_key = "f797e2cf0bb90660383d12fa045c15e6";
 
-const dbRequURL = {
+export const dbRequURL = {
   fetchNetflixOriginals: `/discover/movie?api_key=${api_key}&with_networks`,
   fetchTrending: `/trending/all/week?api_key=${api_key}&language=en-US`,
   fetchTopRated: `movie/top_rated?api_key=${api_key}&language=en-US`,
@@ -10,4 +10,3 @@ const dbRequURL = {
   fetchRomanceMovies: `/discover/movie?api_key=${api_key}&with_genres=10769`,
   fetchDocumentaries: `/discover/movie?api_key=${api_key}&with_genres=99`,
 };
-export default dbRequURL;
